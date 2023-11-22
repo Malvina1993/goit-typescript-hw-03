@@ -22,9 +22,9 @@ class Person{
 }
 
 abstract class House{
-    protected door: boolean = false;
+    protected door: boolean = false ;
     protected key: Key;
-    private tenants: Array<Person>;
+    private tenants: Array<Person> = [];
 
     constructor(key: Key) {
         this.key = key;
@@ -42,7 +42,7 @@ abstract class House{
 
 class MyHouse extends House{
     openDoor(key:Key) {
-        if (this.key === key) {
+        if (this.key == key) {
             this.door = true;
        } 
     }

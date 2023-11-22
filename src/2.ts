@@ -19,8 +19,7 @@ class Employee {
   
 
   constructor(public name: string, private department: string) {
-    this.name = name;
-    this.department = department;
+   
   }
 
   getEmployeeDetails() {
@@ -32,14 +31,10 @@ class Manager extends Employee {
   // Реалізуйте конструктор та збільшіть salary на 10000
   constructor(name: string, departament: string, private salary: number) {
     super(name, departament)
-    // this.salary += 10000; точно не зрозуміла де збільшувати потрібно тому додаю два варіанти
-    this.salary = salary;
-
+    this.salary += 10000; 
   }
 
-  increaseSalry() {
-    return this.salary += 10000;
-  }
+  
   
 }
 
